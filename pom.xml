@@ -11,19 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
-
-    <distributionManagement>
-        <repository>
-            <id>releases</id>
-            <name>releases</name>
-            <url>http://mvnrepo.alibaba-inc.com/nexus/content/repositories/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>snapshots</name>
-            <url>http://mvnrepo.alibaba-inc.com/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
+    
     <build>
         <plugins>
             <plugin>
@@ -48,7 +36,7 @@
           				</manifest>
         			</archive>
                     <descriptorRefs>
-                        <descriptorRef> </descriptorRef>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
 					<!-- new name  <finalName>hello</finalName--> 
         			<appendAssemblyId>false</appendAssemblyId>
