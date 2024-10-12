@@ -11,7 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
-    
+
     <build>
         <plugins>
             <plugin>
@@ -27,6 +27,7 @@
                 </configuration>
             </plugin>
             <plugin>
+                <!-- 支持 mvn package assembly:single 生成独立 jar 包 -->
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>2.3</version>
                 <configuration>
@@ -43,6 +44,7 @@
                     <encoding>utf8</encoding>
                 </configuration>
                 <executions>
+                    <!-- 支持 mvn package 生成独立 jar 包 -->
                     <execution>
                         <id>make-assembly</id>
                         <phase>package</phase>

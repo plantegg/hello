@@ -6,8 +6,8 @@ import java.net.UnknownHostException;
 
 public class SocketClient {
     public static void main(String[] args) {
-        String serverHostname = "phy";
-        int serverPort = 4321;
+        String serverHostname = args[0];
+        int serverPort = Integer.parseInt(args[1]);
 
         try {
             System.out.println("Connecting to " + serverHostname + ":" + serverPort);
@@ -17,6 +17,7 @@ public class SocketClient {
 
             //RST tcp connection
             socket.setSoLinger(true, 0);
+
             // You can now use the socket to communicate with the server
             // For example, you can get the input and output streams and send/receive data
             Thread.sleep(10000);
