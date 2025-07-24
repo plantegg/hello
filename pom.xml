@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>test.hello</groupId>
-    <artifactId>helloworld</artifactId>
+    <artifactId>hellodruid</artifactId>
     <version>1.0</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,7 +33,7 @@
                 <configuration>
 				     <archive>
           				<manifest>
-            				<mainClass>HelloWorldDruid</mainClass>
+            				<mainClass>HelloDruid</mainClass>
           				</manifest>
         			</archive>
                     <descriptorRefs>
@@ -82,7 +82,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
-            <version>1.2.8</version>
+            <version>1.0.18</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
